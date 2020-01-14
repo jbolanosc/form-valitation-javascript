@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Diane & Giordi</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="img-container d-flex align-items-center">
+      <div class="card text-center">
+        <div class="card-header">
+          <span
+            ><img
+              class="logo-card"
+              src="../formulario/img/logo.jpg"
+              alt=""
+              height="70"
+              width="240"
+          /></span>
+        </div>
+        <div class="card-body">
+          <form id="giordiForm">
+            <div class="form-group">
+              <div
+                id="success"
+                class="alert alert-success"
+                hidden
+                role="alert"
+              ></div>
+              <div
+                id="error"
+                class="alert alert-danger"
+                hidden
+                role="alert"
+              ></div>
+              <label>Nombre Completo</label>
+              <input id="nombre" type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label>Telefono</label>
+              <input id="telefono" type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label>Correo Electronico</label>
+              <input id="correo" type="email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label>Confirmar correo electronico</label>
+              <input id="correo2" type="text" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label>Fecha de nacimiento</label>
+              <input id="fecha" type="date" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label>Sexo</label>
+              <input type="radio" name="genero" value="femenino" checked /> F
+              <input type="radio" name="genero" value="masculino" /> M
+            </div>
+
+            <div class="form-group">
+              <label>Tienda de su preferencia</label>
+              <select class="form-control" id="tienda">
+                <option>Boulevar San Jose, Avenida Central</option>
+              </select>
+            </div>
+
+            <button id="btnSubmit" class="btn btn-success">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="../JS/index.js"></script>
+  </body>
+</html>
